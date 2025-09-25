@@ -60,25 +60,25 @@ This approach guarantees the minimum number of transactions needed to settle all
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+- Node.js 22+ 
+- pnpm 9+
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/teja1103/split-wise.git
 cd split-wise
 ```
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 3. Start the development server:
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 4. Open your browser and navigate to `http://localhost:5173`
@@ -86,7 +86,7 @@ npm run dev
 ### Building for Production
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 The built files will be in the `dist` directory.
