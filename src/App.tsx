@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 function App() {
-  const [numPeople, setNumPeople] = useState<number>(2);
+  const [numPeople, setNumPeople] = useState<number>(0);
   const [people, setPeople] = useState<Person[]>([]);
   const [newPersonName, setNewPersonName] = useState<string>("");
   const [newPersonAmount, setNewPersonAmount] = useState<string>("");
@@ -130,11 +130,11 @@ function App() {
                 <Input
                   id="numPeople"
                   type="number"
-                  min="2"
+                  min="0"
                   max="20"
                   value={numPeople}
                   onChange={(e) =>
-                    setNumPeople(Math.max(2, parseInt(e.target.value) || 2))
+                    setNumPeople(Math.max(0, parseInt(e.target.value) || 0))
                   }
                   className="w-20"
                 />
